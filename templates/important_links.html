@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Tautan Penting{% endblock %}
+
+{% block content %}
+    <section class="page-header">
+        <h1>Tautan Penting</h1>
+    </section>
+
+    <section class="content-section">
+        <p>Berikut adalah beberapa tautan yang mungkin berguna untuk Anda:</p>
+        <div class="important-links-grid">
+            {% for link in links %}
+                <a href="{{ link.url }}" class="link-item" target="_blank" style="--icon-color: {{ link.color }};">
+                    <i class="{{ link.icon }}"></i>
+                    <span>{{ link.name }}</span>
+                </a>
+            {% endfor %}
+        </div>
+    </section>
+{% endblock %}

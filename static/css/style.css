@@ -1,0 +1,347 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Latar belakang umum tetap abu-abu muda */
+    color: #333; /* Warna teks umum */
+}
+
+/* --- HEADER / NAVIGASI --- */
+header {
+    background-color: #1A237E; /* Biru gelap untuk header */
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFECB3; /* Kuning sangat muda untuk hover di navigasi */
+}
+
+/* --- MAIN CONTENT SECTIONS --- */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #E3F2FD; /* Biru muda sangat terang untuk hero section */
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #1A237E; /* Biru gelap */
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #424242; /* Abu-abu gelap */
+}
+
+.campus-logo-hero { /* Jika Anda menambahkan gambar logo di hero section */
+    max-width: 250px;
+    height: auto;
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quick-info {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff; /* Tetap putih */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+.quick-info h2 {
+    color: #1A237E; /* Biru gelap */
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #FFC107; /* Kuning cerah */
+    color: #1A237E; /* Teks biru gelap di tombol kuning */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FFA000; /* Kuning lebih gelap saat hover */
+    color: white; /* Teks putih saat hover */
+}
+
+.page-header {
+    background-color: #1A237E; /* Biru gelap untuk header halaman internal */
+    color: white;
+    padding: 40px 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.content-section {
+    background-color: #fff; /* Tetap putih */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+.content-section h2 {
+    color: #1A237E; /* Biru gelap */
+    margin-bottom: 15px;
+    border-bottom: 2px solid #E3F2FD; /* Garis bawah biru muda */
+    padding-bottom: 10px;
+}
+
+.content-section ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.content-section ul li {
+    margin-bottom: 10px;
+}
+
+.course-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.course-item {
+    background-color: #E3F2FD; /* Biru muda sangat terang */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.course-item h3 {
+    color: #1A237E; /* Biru gelap */
+    margin-top: 0;
+}
+
+.btn-small {
+    display: inline-block;
+    background-color: #42A5F5; /* Biru yang lebih terang */
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-small:hover {
+    background-color: #2196F3; /* Biru sedikit lebih gelap saat hover */
+}
+
+/* --- FOOTER STYLES --- */
+footer {
+    background-color: #1A237E; /* Biru gelap untuk footer */
+    color: white;
+    padding: 30px 20px 10px;
+    margin-top: 30px;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px 20px;
+}
+
+.footer-section h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.footer-section p {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #FFECB3; /* Kuning sangat muda untuk hover di footer */
+}
+
+.footer-section .section-tag {
+    display: inline-block;
+    background-color: #FFC107; /* Kuning cerah seperti contoh gambar */
+    color: #1A237E; /* Teks biru gelap di tag kuning */
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-section .fa-map-marker-alt,
+.footer-section .fa-phone-alt {
+    margin-right: 8px;
+    color: #FFC107; /* Ikon kuning */
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.8rem;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #FFC107; /* Kuning saat hover ikon */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Media Queries untuk Responsif */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+    }
+
+    .social-icons {
+        margin-top: 20px;
+    }
+}
+
+/* CSS for course detail page */
+.course-full-description {
+    margin-bottom: 30px;
+    line-height: 1.8;
+    font-size: 1.1em;
+}
+
+.course-full-description p {
+    margin-bottom: 1em;
+}
+
+/* H3 di dalam .course-full-description untuk prospek kerja */
+.course-full-description h3 {
+    color: #1A237E; /* Biru gelap */
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #E3F2FD;
+    padding-bottom: 8px;
+}
+
+.course-full-description ul {
+    list-style: none; /* Hapus bullet default */
+    padding-left: 0;
+}
+
+.course-full-description ul li {
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.course-full-description ul li strong {
+    color: #424242; /* Warna teks tebal */
+}
+
+/* Tambahkan bullet kustom */
+.course-full-description ul li::before {
+    content: "\2022"; /* Karakter bullet */
+    color: #FFC107; /* Warna bullet kuning */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+    left: 0;
+}

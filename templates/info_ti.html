@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}{{ course.name }}{% endblock %}
+
+{% block content %}
+    <section class="page-header">
+        <h1>{{ course.name }}</h1>
+        <p>Program Studi yang melahirkan inovator teknologi.</p>
+    </section>
+
+    <section class="content-section">
+        <h2>Gambaran Umum</h2>
+        <p>{{ course.overview }}</p>
+    </section>
+
+    <section class="content-section">
+        <h2>Fokus Kurikulum</h2>
+        <p>{{ course.curriculum_focus }}</p>
+    </section>
+
+    <section class="content-section">
+        <h2>Prospek Karir Lulusan</h2>
+        <div class="prospects-list">
+            {% for prospect in course.prospects %}
+                <div class="prospect-item">
+                    <h4>{{ prospect.title }}</h4>
+                    <p>{{ prospect.detail }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <section class="quick-info" style="background-color: var(--accent-color); color: white;">
+        <h2>Tertarik bergabung?</h2>
+        <p>Jadilah bagian dari generasi penerus teknologi di {{ campus_name }}.</p>
+        <a href="#" class="btn" style="background-color: white; color: var(--accent-color);">Daftar Sekarang</a>
+    </section>
+{% endblock %}

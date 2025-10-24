@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}{{ course.name }} - Program Studi{% endblock %}
+
+{% block content %}
+    <section class="page-header">
+        <h1>{{ course.name }}</h1>
+    </section>
+
+    <section class="content-section">
+        <div class="course-full-description">
+            {{ course.full_description | safe }}
+        </div>
+        <p><a href="{{ url_for('courses') }}" class="btn">Kembali ke Daftar Program Studi</a></p>
+    </section>
+{% endblock %}

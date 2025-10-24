@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politeknik Baja TegaL - {% block title %}{% endblock %}</title>
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="{{ url_for('index') }}">Politeknik Baja Tegal</a>
+            </div>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Beranda</a></li>
+                <li><a href="{{ url_for('about') }}">Tentang Kami</a></li>
+                <li><a href="{{ url_for('courses') }}">Program Studi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section address-section">
+                <div class="section-tag">Alamat Kampus</div>
+                <h3>Politeknik Baja Tegal</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Jl. Raya Barat Dukuhwaru, km 7, Dukuhwaru, Kab. Tegal, Jawa Tengah</p>
+            </div>
+            <div class="footer-section contact-section">
+                <div class="section-tag">Kontak Kampus</div>
+                <p><i class="fas fa-phone-alt"></i> <a href="tel:+6282325580008">+62 823-2558-0008</a></p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/poltekbajategal?igsh=MXhmMDVnZGJlM2R5NQ==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto:poltekbaja@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://wa.me/6282325580008" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 POLITEKNIK BAJA TEGAL. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+</body>
+</html>

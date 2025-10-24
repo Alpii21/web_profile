@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Program Studi{% endblock %}
+
+{% block content %}
+    <section class="page-header">
+        <h1>Program Studi</h1>
+    </section>
+
+    <section class="content-section">
+        <div class="course-list">
+            {% for course in courses %}
+                <div class="course-item">
+                    <h3>{{ course.name }}</h3>
+                    <p>{{ course.short_description }}</p>
+                    <a href="{{ url_for('course_detail', course_id=course.id) }}" class="btn-small">Detail</a>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+{% endblock %}

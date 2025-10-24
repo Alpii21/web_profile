@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Tentang Kami{% endblock %}
+
+{% block content %}
+    <section class="page-header">
+        <h1>Tentang {{ campus.name }}</h1>
+    </section>
+
+    <section class="content-section">
+        <h2>Profil Singkat</h2>
+        <p>{{ campus.about }}</p>
+    </section>
+
+    <section class="content-section">
+        <h2>Visi</h2>
+        <p>{{ campus.vision }}</p>
+    </section>
+
+    <section class="content-section">
+        <h2>Misi</h2>
+        <ul>
+            {% for item in campus.mission %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+    </section>
+{% endblock %}

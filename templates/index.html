@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Beranda{% endblock %}
+
+{% block content %}
+    <section class="hero">
+        <h1>Selamat Datang di {{ campus.name }}</h1>
+        <p>{{ campus.tagline }}</p>
+        <img src="{{ url_for('static', filename='img/poltek_baja_tegal_logo.png') }}" alt="Logo Politeknik Baja Tegal" class="campus-logo">
+    </section>
+
+    <section class="quick-info">
+        <h2>Sekilas Info</h2>
+        <p>Lihat lebih banyak tentang kami atau jelajahi program studi yang kami tawarkan.</p>
+        <a href="{{ url_for('about') }}" class="btn">Tentang Kami</a>
+        <a href="{{ url_for('courses') }}" class="btn">Program Studi</a>
+    </section>
+{% endblock %}
